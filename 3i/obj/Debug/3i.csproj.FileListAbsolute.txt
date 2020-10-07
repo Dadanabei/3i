@@ -1,0 +1,4 @@
+C:\Project\Latihan3i\3i\3i\3i\bin\3i.dll
+C:\Project\Latihan3i\3i\3i\3i\bin\3i.pdb
+C:\Project\Latihan3i\3i\3i\3i\obj\Debug\3i.dll
+C:\Project\Latihan3i\3i\3i\3i\obj\Debug\3i.pdb
