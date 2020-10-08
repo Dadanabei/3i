@@ -14,6 +14,9 @@
     <link href="vendor/datatables/css/dataTables.uikit.min.css" rel="stylesheet" />
     <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link href="css/960.css" rel="stylesheet" type="text/css" />
+    <link href="css/coolMenu.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery-1.7.1.min.js"></script>
     <script src="/js/jquery-ui.js"></script>
@@ -43,122 +46,43 @@
 
            </div>
           
+       <div>
+        <ul id="coolMenu">
+		
+			<li><a href="#">Beranda</a></li>
+			<li><a href="#">Profil</a>
+                <ul class="noJS">
+					<li><a href="/Profile/VisiMisi.aspx">Visi dan Misi</a></li>
+					<li><a href="/Profile/TerakreditasiESDM.aspx">Terakreditasi ESDM</a></li>
+					<li><a href="/Profile/DireksiDanKomisaris.aspx">Direksi Dan Komisaris</a></li>
+                    <li><a href="/Profile/StucturOrganisasi">Stuctur Organisasi</a></li>
+				</ul>
+            </li>
+			<li>
+				<a href="#">LayananKami</a>
+				<ul class="noJS">
+					<li><a href="/Profile/PendaftaranSLO.aspx">Pendaftaran SLO TREIPLE-i</a></li>
+					<li><a href="/Profile/StatusSLO.aspx">Cek Status Pendaftaran SLO TREIPLE-i</a></li>
+					<li><a href="/Profile/VerifikasiSLO.aspx">Verifikasi Keabsahan SLO TREIPLE-i</a></li>
+                    
+				</ul>
+			</li>
+			<li><a href="#">Kantor Wilayah</a></li>
+			<li><a href="#">Mira</a></li>
+            <li><a href="#">Buku Tamu</a></li>
+
+		</ul>
+       </div>
         
-        
-            <a class="navbar-brand" >   
+            
 
-            </a>
-            <ul class="nav navbar-top-links navbar-left" >
-               <li>
-               <a href="#"> Beranda</a>
-               </li>
-                 <li>
-               <a href="#"> Profil</a>
-               </li>
-                 <li>
-                <a href="#"> Layanan Kami</a>
-               </li>
-                 </li>
-                 <li>
-               <a href="#"> Kantor Wilayah</a>
-               </li>
-                 <li>
-               <a href="#"> Mitra</a>
-               </li>
-                 <li>
-               <a href="#"> Buku Tamu</a>
-               </li>
-                
-               
-            </ul>
-
-            <ul class="nav navbar-top-links navbar-right" >
-               <li>
-               <a href="#"><i class="fa fa-user fa-fw"></i><label id="lblUser"></label></a>
-               </li>
-                
-               
-            </ul>
-          <%--  <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-
-                        <li id="Home">
-                            <a href="/Default.aspx"><i class="fa fa-home  fa-fw"></i>Home</a>
-                        </li>
-
-                        <li id="createOrder">
-                             <a href="/Web/Costumer/ListOrder.aspx"><i class="fa fa-list-ol  fa-fw"></i> Order</a>
-
-
-                        </li>
-                        <li id="Approval">
-                            <a href="/Web/Approval/Approval.aspx"><i class="fa fa-list-ol  fa-fw"></i>Approval</a>
-                        </li>
-                        <li id="Pjs">
-                            <a href="/Web/Approval/Pjs.aspx"><i class="fa fa-retweet fa-fw"></i>Pjs</a>
-                        </li>
-
-                          <li id="Admin">
-                            <a href="/Web/Admin/ListAdmin.aspx" ><i class="fa fa-list fa-fw" > </i>Order</a>
-
-                           
-                        </li>
-                        <li id="Master">
-                            <a href="#"><i class="fa fa-desktop fa-fw"></i>Master<span class="fa arrow" onclick="toggledisplay('changethis');"></span></a>
-                            <ul class="nav nav-second-level" id="changethis" style="overflow-x: visible; overflow-y: visible">
-                                <li>
-                                    <a href="/Master/MasterMobil.aspx">Master Mobil</a>
-                                </li>
-                                <li>
-                                    <a href="/Master/MasterDriver.aspx">Master Driver</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/Master/MasterPesawat.aspx">Master Pesawat</a>
-                                </li>
-
-                                <li>
-                                    <a href="/Master/MerkMobil.aspx">Jenis Mobil</a>
-                                </li>
-                                <li>
-                                    <a href="/Master/KelasMobil.aspx">Kelas Mobil</a>
-                                </li>
-
-                                <li>
-                                    <a href="/Master/MasterPekerja.aspx">Master Pekerja</a>
-                                </li>
-                                <li>
-                                    <a href="/Master/MasterMess.aspx">Master Mess</a>
-                                </li>
-
-
-                            </ul>
-
-                        </li>
-
-                        <li id="Admin2">
-                            <a href="/Web/Admin/UserManagement.aspx" ><i class="fa fa-users fa-fw" > </i>User Management</a>
-
-                           
-                        </li>
-                         <li id="Pos1">
-                            <a href="/Web/Costumer/Pos1.aspx"><i class="fa fa-list  fa-fw"></i>POSKO 1</a>
-                        </li>
-                        <li id="Pos9">
-                            <a href="/Web/Costumer/Pos9.5.aspx"><i class="fa fa-list  fa-fw"></i>POSKO 9.5</a>
-                        </li>
-                        <li>
-                            <a href="/Login.aspx"><i class="fa fa-unlock-alt fa-fw"></i>Log out</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>--%>
+          
+       
             <!-- /.navbar-static-side -->
         </nav>
+      
     </div>
+     
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
